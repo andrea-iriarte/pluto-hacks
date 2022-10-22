@@ -1,0 +1,27 @@
+Name : Lettuce
+Quantity: 2
+image:24e359a1515bcb2bdf72bc6cb2b57e28_large.png
+
+
+Name: Carrots
+Quantity: 5
+image: Fresh_orange_carrots.jpg
+
+Name: Blue berries
+Quantity: 6
+image: frblueberries_breakfast_muesli_1593965-image-kybe84ay.jpg
+
+Name: Half-dozen eggs
+Quantity: 3
+image: half-dozen-eggs.jpg
+
+Name: Onions
+Quantity: 6
+image: fronions_vegetables_healthy_power-image-kybd2v4a.jpg
+
+Name:kiwifruits
+Quantity: 6
+image: preview16.jpg
+
+
+
