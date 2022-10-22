@@ -1,7 +1,17 @@
-async function mockFunction()
+/*const text = document.getElementById("text-box");
+text.onclick = function ()
 {
-    const data = await fetch(/*api url*/);
-    const location = await data.json();
 
-    return location;
-}
+}*/
+
+
+ const search = document.getElementById("search-button");
+ const input = document.getElementById("search");
+ search.onclick = function(){
+    window.location.href = "pantries.html";
+ };
+
+
+ 
+
+ 

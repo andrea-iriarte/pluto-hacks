@@ -26,7 +26,21 @@ function initMap()
         center: browardCounty,
     });
 
-    const markerCentralCampus = new google.maps.Marker({
+    const contentString =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h1 id="firstHeading" class="firstHeading">Broward College</h1>' +
+    '<div id="bodyContent">' +
+    "<p><b>North Campus</b></p>" +
+    "</div>" +
+    "</div>";
+  const infowindowNorthBC = new google.maps.InfoWindow({
+    content: contentString,
+    ariaLabel: "Broward College - North Campus",
+  });
+  
+  const markerCentralCampus = new google.maps.Marker({
         position: centralCampus,
         map: map,
     });
@@ -40,7 +54,16 @@ function initMap()
         position: southCampus,
         map: map
     });
+    marker.onclick = function(){
+        infowindowNorthBC.open({
+      anchor: markerNorthCampus,
+      map,
+    });
+  };
+
 }
+
+window.initMap = initMap;
 const pantriesList = document.getElementById("pantries")
 
 const northBC = {
@@ -53,7 +76,7 @@ const northBC = {
 const centralBC = {
     name: "A. Hugh Adams Central Campus",
     address: "3501 Davie Rd. Davie, FL 33314",
-    hours: "",
+    hours: "Mondays 1 - 3 pm",
     isOpen: false
 };
 
@@ -68,26 +91,26 @@ const pantries = [northBC, centralBC, southBC];
 
 for (let x = 0; x < pantries.length; x++)
 {
-    const section = document.createElement("section");
+    const section = document.createElement("div");
     const name = document.createElement("p1");
     const address = document.createElement("p1");
     const hours = document.createElement("p1");
     const button = document.createElement("p1");
 
-    section.setAttribute("class", "block");
-    name.setAttribute("class", "block");
+    section.setAttribute("class", "block pantries-list-container padding-bottom");
+    name.setAttribute("class", "block fw-bold fs-heading");
     address.setAttribute("class", "block");
-    hours.setAttribute("class", "block");
-    button.setAttribute("class", "block");
-
-
-
-
+    hours.setAttribute("class", "block fw-medium");
+    button.setAttribute("class", "block fw-bold pointer highlight");
 
     name.appendChild(document.createTextNode(pantries[x].name));
     address.appendChild(document.createTextNode(pantries[x].address));
     hours.appendChild(document.createTextNode(pantries[x].hours));
     button.appendChild(document.createTextNode("Select this pantry"));
+
+    button.onclick = function(){
+        window.location.href = "inventory.html";
+    }
 
     section.appendChild(name);
     section.appendChild(address);

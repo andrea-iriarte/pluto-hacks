@@ -6,6 +6,7 @@
         </title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="pantries.css">
+
         <link rel="preconnect" href="https://rsms.me/">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +15,8 @@
     <body>
         <header>
             <div class="bg-header fc-light inline-grid" id="header">
-                <section id = "logo" class="inline-block pointer" style="text-align: left">
-                    <h1 class="fs-heading" style="word-spacing: 5px; padding-left: 0.5rem;" alt = "broward college pantry helper home page">Broward College Pantry Helper</h1>    
+                <section id = "logo" class="inline-block pointer" style="text-align: left; padding-left: 0.5rem;">
+                    <h1 class="fs-heading" style="word-spacing: 5px" alt = "Broward College Pantry Helper homepage">Broward College Pantry Helper</h1>    
                 </section>
                 <section class="inline-block" style="text-align: right">
                     <h2 class="fs-heading inline-block" style ="padding-right: 5px">Log in</h2>
@@ -23,26 +24,17 @@
                     <div class ="circle inline-block"></div>
                 </section> 
             </div>
+            
         </header>
 
-        <div class="container block">
-            <h1 id="pantries-title" class="fs-larger block">Pantries Nearby</h1>
-
-            <div id="map" class = "block" alt = "map of broward county and nearest food pantries"></div>
-            <ul id="pantries"  class = "block" alt="list of nearest food pantries"></ul>
-        </div>
-
-        
-
-        
-
-        <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-        defer
-        ></script>
-        <script src="pantries.js"></script>
-        <script src="homepage-loader.js"></script>
-
-
+        <main>
+            
+                <img src ="../food-donation-box-vector-diiferent-hands-giving-charity-card-illustration-177228146.jpeg" id = "confirm-pic">
+                <h1 class = "format">Thank you for ordering!</h1>
+                <p class = "format">Your order will be ready soon</p>
+           
+        </main>
+        <script src = "homepage.js"></script>
+        <script src = "homepage-loader.js"></script>
     </body>
 </html>

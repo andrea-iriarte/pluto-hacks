@@ -84,8 +84,12 @@ select {
     --fc-light:rgb(255, 255, 255);
     --fc-grey:rgb(118, 116, 166);
     
-    --bg-header: rgb(0,0,0);
+    --bg-header: rgb(32, 96, 19);
     --bg-search-bar: rgb(255, 255, 255);
+
+    --fw-light: 200;
+    --fw-medium: 300;
+    --fw-bold: 500;
 
 }
 
@@ -97,6 +101,16 @@ html {
   }
 
 /*utilities*/
+.fw-light{
+  font-weight: var(--fw-light);
+}
+.fw-medium{
+  font-weight: var(--fw-medium);
+}
+.fw-bold{
+  font-weight: var(--fw-bold);
+}
+
 .fs-heading{
     font-size: var(--fs-heading);
 }
@@ -158,6 +172,83 @@ html {
   display: block;
 }
 
+.inventory-pic
+{
+  width: 90%;
+  height: 170px;
+  border-radius: 20px;
+}
+.pointer:hover
+{
+  cursor: pointer;
+}
+.highlight:hover
+{
+  color: rgb(32, 96, 19);;
+}
+
+.pantries-list-container:hover
+{
+  height: 7rem;
+  width: 90%;
+  outline: 2.5px solid rgb(32, 96, 19);;
+}
+
+.padding-bottom
+{
+  padding-bottom: 1rem;
+}
+
+.add-section
+{
+  font-size: var(--fs-larger);
+  text-align: center;
+  padding: 1rem;
+}
+
+
+.inline-block
+{
+  display: inline-block;
+}
+
+.container-style
+{
+  height: 270px;
+  width: 100%;
+  border-radius: 20px;
+  
+
+
+}
+
+#inventory-grid
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+#map
+{
+    width: min(40rem, 80%);
+    height: 40%;
+    
+    margin-top: 1rem;
+    padding-bottom: 5%;
+    border-radius: 20px;
+}
+
+body{
+  
+  
+}
+
+#pantry-title
+{
+  
+}
 
 #header
 {
@@ -165,20 +256,38 @@ html {
     height: 3rem;
 }
 
-#map
+#search
 {
-    width: min(40rem, 80%);
-    height: 40%;
-    margin: auto;
-    margin-top: 5%;
-    border-radius: 20px;
+  border-radius: 20px;
+
 }
 
-body{
-  
+main{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
+#search-icon
+{
+  background-color:hsl(208, 0%, 97%);
+}
 
+#confirm-pic
+{
+  height: 40%;
+  width: 40%;
+  padding-bottom: 5%;
 
+  margin:auto;
+}
 
+.format
+{
+  margin:auto;
+  text-align: center;
+  padding-bottom: 3%;
+}
 

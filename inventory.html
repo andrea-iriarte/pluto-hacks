@@ -25,24 +25,15 @@
             </div>
         </header>
 
-        <div class="container block">
-            <h1 id="pantries-title" class="fs-larger block">Pantries Nearby</h1>
-
-            <div id="map" class = "block" alt = "map of broward county and nearest food pantries"></div>
-            <ul id="pantries"  class = "block" alt="list of nearest food pantries"></ul>
-        </div>
-
-        
+        <section>
+            <h1>Available Inventory</h1>
+            <div id = "inventory-grid"></div>
+            <button type="button" id="confirm" style="margin-top: 1rem;">Confirm Order</button>
+        </section>
 
         
-
-        <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-        defer
-        ></script>
-        <script src="pantries.js"></script>
-        <script src="homepage-loader.js"></script>
-
+        <script src ="inventory.js"></script>
+        <script src = "homepage-loader.js"></script>
 
     </body>
 </html>
