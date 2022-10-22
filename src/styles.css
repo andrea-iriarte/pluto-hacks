@@ -1,0 +1,200 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,ß
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root { 
+    font-family: 'Inter', sans-serif; 
+    
+    /*variables*/
+    --fs-heading: 18px;
+    --fs-large: 20px;
+    --fs-larger: 24px;
+
+    --fc-light:rgb(255, 255, 255);
+    --fc-grey:rgb(118, 116, 166);
+    
+    --bg-header: rgb(51, 135, 64);
+    --bg-search-bar: rgb(255, 255, 255);
+
+}
+
+html { 
+    background: url(../FoodBank.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+/*utilities*/
+.fs-heading{
+    font-size: var(--fs-heading);
+}
+
+.fs-large{
+    font-size: var(--fs-large);
+}
+
+.fs-larger{
+    font-size: var(--fs-larger);
+}
+
+.fc-light
+{
+    color: var(--fc-light);
+}
+
+.fc-grey
+{
+    color: var(--fc-grey);
+}
+
+
+
+.bg-header{
+    background-color: var(--bg-header);
+}
+.bg-search-bar{
+    background-color: var(--bg-search-bar);
+}
+
+.inline-grid
+{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.inline-block
+{
+    display: inline-block;
+    padding-top: .5rem;
+    
+}
+
+.margin-auto
+{
+    margin: auto;
+}
+
+.container
+{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+
+.no-outline
+{
+  outline: none;
+}
+
+
+#header
+{
+    width: 100%;
+    height: 3rem;
+}
+
+#search
+{
+    width: min(90%, 22rem);
+    height: 2rem;
+    border-radius: 1rem;
+    
+    
+    margin: auto;
+    margin-top: 30%;
+}
+
+#logo
+{
+    height: 2rems;
+    width: 2rems;
+}
+
+#map
+{
+    width: min(40rem, 80%);
+    height: 40%;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 20px;
+}
+
+
+
+
+
