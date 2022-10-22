@@ -1,1 +1,4 @@
-26.051809, -80.211464
+26.051809, -80.211464  hard rock
+26.0066° N, 80.2344° W  south campus
+26.2405° N, 80.1743° W  north campus
+26.0800° N, 80.2357° W  central campus
