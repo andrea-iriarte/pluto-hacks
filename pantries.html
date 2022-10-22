@@ -1,0 +1,46 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>
+            BC PANTRY
+        </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="pantries.css">
+        <link rel="preconnect" href="https://rsms.me/">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="bg-header fc-light inline-grid" id="header">
+                <section class="inline-block" style="text-align: left">
+                    <h1 class="fs-heading" style="word-spacing: 5px" alt = "broward college pantry helper home page">Broward College Pantry Helper</h1>    
+                </section>
+                <section class="inline-block" style="text-align: right">
+                    <h2 class="fs-heading inline-block" style ="padding-right: 5px">Log in</h2>
+                    <h2 class="fs-heading inline-block">Sign up</h2>
+                    <div class ="circle inline-block"></div>
+                </section> 
+            </div>
+        </header>
+
+        <div class="container">
+            <h1 id="pantries-title" class="fs-larger" style="margin-left: 9%">Pantries Nearby</h1>
+
+            <div id="map" alt = "map of broward county and nearest food pantries"></div>
+        </div>
+
+        <ul id="pantries" alt="list of nearest food pantries"></ul>
+
+        
+
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+        defer
+        ></script>
+        <script src="pantries.js"></script>
+
+
+    </body>
+</html>
